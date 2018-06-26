@@ -1,3 +1,4 @@
+
 class ApplicationController < Sinatra::Base
 
   configure do
@@ -8,4 +9,9 @@ class ApplicationController < Sinatra::Base
   get "/" do
   	erb :index
   end
+
+  get "/dog" do
+    "lots of dogs "
+  end
+
 end
