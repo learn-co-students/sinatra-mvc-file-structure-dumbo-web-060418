@@ -5,7 +5,16 @@ class ApplicationController < Sinatra::Base
   	set :public_dir, "public"
   end
 
+  get '/' do
+    "<h1>Hello World</h1>"
+    "<p> I love programming </p>"
+  end
+
   get "/" do
   	erb :index
+  end
+
+  get '/info' do
+    erb :info
   end
 end
